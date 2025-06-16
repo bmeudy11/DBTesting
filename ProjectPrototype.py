@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 
 #how many iterations to run
-NUM_ITERATIONS = 15
+NUM_ITERATIONS = 2
 
 
 #local mongo instance
@@ -217,7 +217,7 @@ if __name__ == '__main__':
     plt.hist(hbaseData, label='HBase', color='blue')
 
     # Adding titles and labels
-    plt.title('Distribution of Iteration Times')
+    plt.title(f'Distribution of Iteration Times \n {NUM_ITERATIONS} iterations and {NUM_THREADS} threads \n Row/Document size {DOCUMENT_SIZE_BYTES} bytes')
     plt.xlabel('Time (s)')
     plt.ylabel('Frequency')
 
